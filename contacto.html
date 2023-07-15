@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de Lino Vivero</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="icon" href="img/Flor-de-lino-recortada.ico">
+    <!--link al css va en el head-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <!--XXXX Fin del agregado XXXX-->
+</head>
+
+<body class="container2">
+    <header class="header ">
+        <!-- 1 div para el logo y 1 barra de nav -->
+
+        <h1 class="titulo item2">Vivero Flor de Lino</h1>
+        <!-- se arman con ul -->
+
+        <nav class="item2">
+            <!-- se arman con ul -->
+            <ul>
+                <li><a href="index.html">Inicio</a> </li> <!-- OJO: el texto debe estar dentro de la a -->
+                <li><a href="Plantas.html">Plantas</a></li>
+                <li><a href="Macetas.html">Macetas</a></li>
+                <li><a href="cuidados.html">Cuidados </a></li>
+                <li><a href="contacto.html">Contacto </a></li>
+                <li><a href="Carrito.html">Carrito</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header> <!-- el header no estaba cerrado-->
+
+    <div class="izq">
+        <br> <br>
+        <h2 class="tituloForm">Contactanos</h2>
+
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name"><span id="nameError" class="error"></span><br><br>
+
+            <label for="phone">Teléfono:</label>
+            <input type="text" id="phone" name="phone"><span id="phoneError" class="error"></span><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><span id="emailError" class="error"></span><br><br>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message"></textarea><span id="messageError" class="error"></span><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="validacion.js"> </script>
+
+    <main class="contenido">
+        <h2 class="tituloForm"> <br> <br> <br> <br> <br> <br> <br> <br> ¡Vení a visitarnos!<br> <br> Te esperamos <br>de
+            Lunes a Viernes de 9 a 18 hs en <br> Av. Pres. Figueroa Alcorta 2467, CABA</h2>
+
+
+        <div class="mapa">
+
+            <br> <br> <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.857219418509!2d-58.39663032541048!3d-34.58247917296194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa023921f17%3A0x61fed1d6fb6acec0!2sAv.%20Pres.%20Figueroa%20Alcorta%202467%2C%20C1425CKE%20CABA!5e0!3m2!1ses!2sar!4v1684704478779!5m2!1ses!2sar"
+                width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </main>
+
+    <footer class="pie item">
+        <div>
+            <h5>Seguinos en redes</h5>
+
+            <img src="iconos/ig.png" alt="Instagram">
+            <img src="iconos/whatsapp.png" alt="WhatsApp">
+            <a href="contacto.html"><img src="iconos/pin.png" alt="Ubicación"></a>
+            <a href="contacto.html"><img src="iconos/email.png" alt="E-mail"></a>
+
+            <h6>© Copyright Vivero Flor de Lino - 2023 - Grupo 19 - Comisión 23007</h6>
+        </div>
+
+    </footer>
+</body>
+
+</html>
